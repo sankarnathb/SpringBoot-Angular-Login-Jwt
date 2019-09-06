@@ -94,19 +94,19 @@ var AppConfig = (function () {
 
 var routes = [
     //Important: The sequence of path is important as the router go over then in sequential manner
-    { path: '', redirectTo: '/home/dashboard/order', pathMatch: 'full' },
+    { path: '', redirectTo: '/home', pathMatch: 'full' },
     {
         path: 'home',
         component: __WEBPACK_IMPORTED_MODULE_0__home_component__["a" /* HomeComponent */],
         canActivate: [__WEBPACK_IMPORTED_MODULE_11__services_auth_guard_service__["a" /* AuthGuard */]],
         children: [
-            { path: '', redirectTo: '/home/dashboard/order', pathMatch: 'full', data: [{ selectedHeaderItemIndex: 1, selectedSubNavItemIndex: -1 }] },
+            { path: '', redirectTo: '/home', pathMatch: 'full', data: [{ selectedHeaderItemIndex: 1, selectedSubNavItemIndex: -1 }] },
             {
                 path: 'dashboard',
                 component: __WEBPACK_IMPORTED_MODULE_3__pages_dashboard_dashboard_component__["a" /* DashboardComponent */],
                 data: [{ selectedHeaderItemIndex: 0, selectedSubNavItemIndex: -1 }],
                 children: [
-                    { path: '', redirectTo: '/home/dashboard/order', pathMatch: 'full' },
+                    { path: '', redirectTo: '/home', pathMatch: 'full' },
                     { path: 'order', component: __WEBPACK_IMPORTED_MODULE_5__pages_order_stats_order_stats_component__["a" /* OrderStatsComponent */], data: [{ selectedHeaderItemIndex: 0, selectedSubNavItemIndex: 0 }] },
                     { path: 'product', component: __WEBPACK_IMPORTED_MODULE_4__pages_product_stats_product_stats_component__["a" /* ProductStatsComponent */], data: [{ selectedHeaderItemIndex: 0, selectedSubNavItemIndex: 1 }] }
                 ]
@@ -2226,7 +2226,7 @@ var LoginService = (function () {
         this.router = router;
         this.userInfoService = userInfoService;
         this.apiRequest = apiRequest;
-        this.landingPage = "/home/dashboard/order";
+        this.landingPage = "/home";
     }
     LoginService.prototype.getToken = function (username, password) {
         var _this = this;

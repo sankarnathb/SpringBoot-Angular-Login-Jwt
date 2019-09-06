@@ -13,7 +13,7 @@ import { PageNotFoundComponent }  from './pages/404/page-not-found.component';
 
 export const routes: Routes = [
   //Important: The sequence of path is important as the router go over then in sequential manner
-  { path: '', redirectTo: '/home/dashboard/order', pathMatch: 'full' },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   {
     path: 'home',
     component: HomeComponent,

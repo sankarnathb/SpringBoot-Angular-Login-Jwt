@@ -23,14 +23,6 @@ export class HomeComponent   {
 
     public showAppAlert:boolean = false;
     public appHeaderItems=[
-        {
-            label   : 'Dashboard',
-            href    : '/home/dashboard',
-            subNav  : [
-                { label:"Order Stats"  , href:"/home/dashboard/order"  },
-                { label:"Product Stats", href:"/home/dashboard/product"}
-            ]
-        },
         { label: 'Orders'   , href: '/home/orders'    , subNav: []},
         { label: 'Products' , href: '/home/products'  , subNav: []},
         { label: 'Customers', href: '/home/customers' , subNav: []},

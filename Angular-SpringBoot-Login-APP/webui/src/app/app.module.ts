@@ -28,14 +28,9 @@ import { AppComponent }       from './app.component';
 import { HomeComponent         } from './home.component';
 import { LoginComponent        } from './pages/login/login.component';
 import { LogoutComponent       } from './pages/logout/logout.component';
-import { DashboardComponent    } from './pages/dashboard/dashboard.component';
 import { OrderStatsComponent   } from './pages/order_stats/order_stats.component';
-import { ProductStatsComponent } from './pages/product_stats/product_stats.component';
-import { ProductsComponent     } from './pages/products/products.component';
-import { CustomersComponent    } from './pages/customers/customers.component';
 import { OrdersComponent       } from './pages/orders/orders.component';
 import { OrderDetailsComponent } from './pages/order_details/order_details.component';
-import { EmployeesComponent    } from './pages/employees/employees.component';
 
 
 // Services
@@ -46,9 +41,7 @@ import { ApiRequestService} from './services/api/api-request.service';
 import { TranslateService } from './services/api/translate.service';
 import { LoginService     } from './services/api/login.service';
 import { OrderService     } from './services/api/order.service';
-import { ProductService   } from './services/api/product.service';
-import { CustomerService  } from './services/api/customer.service';
-import { EmployeeService  } from './services/api/employee.service';
+
 
 
 @NgModule({
@@ -82,12 +75,7 @@ import { EmployeeService  } from './services/api/employee.service';
     HomeComponent,
     LoginComponent,
     LogoutComponent,
-    DashboardComponent,
-    ProductStatsComponent,
     OrderStatsComponent,
-    ProductsComponent,
-    EmployeesComponent,
-    CustomersComponent,
     OrdersComponent,
     OrderDetailsComponent,
 
@@ -102,9 +90,6 @@ import { EmployeeService  } from './services/api/employee.service';
     ApiRequestService,
     LoginService,
     OrderService,
-    ProductService,
-    CustomerService,
-    EmployeeService,
     AppConfig,
   ],
 
